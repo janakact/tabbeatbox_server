@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Adroitlogic - UoM Session - 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/vendor/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="resources/styles.css">
+
+    <script src="resources/vendor/angular/es6-shim.min.js"></script>
+    <script src="resources/vendor/angular/system-polyfills.js"></script>
+    <script src="resources/vendor/angular/shims_for_IE.js"></script>
+
+    <script src="resources/vendor/angular/angular2-polyfills.js"></script>
+    <script src="resources/vendor/angular/system.js"></script>
+    <script src="resources/vendor/angular/Rx.js"></script>
+    <script src="resources/vendor/angular/angular2.dev.js"></script>
+    <script src="resources/vendor/angular/router.js"></script>
+    <script src="resources/vendor/angular/http.js"></script>
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/main')
+                .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+<uom-app>Loading...</uom-app>
+</body>
+</html>
