@@ -1,6 +1,8 @@
 package org.tapbeatbox.server.controllers;
 
+import org.tapbeatbox.server.common.DbManager;
 import org.tapbeatbox.server.config.AppConfig;
+import org.tapbeatbox.server.resources.StudentResource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.HeaderParam;
@@ -21,12 +23,22 @@ public class AuthController {
     @GET
     @Path("/")
     @Produces("application/json")
-    public Response getStudent(@HeaderParam("Authorization") String authKey) {
+    public StudentResource getStudent(@HeaderParam("Authorization") String authKey) {
+
+        DbManager dbManager = DbManager.getInstance();
+
+
+
+       System.out.println("LOl");
         Client client = ClientBuilder.newClient();
         WebTarget webTarget = client.target(AppConfig.REMOTE_HOST).path("rest").path("student").path("auth");
-        return webTarget.request().
-                header("Authorization", AppConfig.STUDENT_KEY).
-                accept(MediaType.APPLICATION_JSON_TYPE).
-                get();
+
+        StudentResource std = new StudentResource();
+        std.setId(1);
+        return new StudentResource();
+//        return webTarget.request().
+//                header("Authorization", AppConfig.STUDENT_KEY).
+//                accept(MediaType.APPLICATION_JSON_TYPE).
+//                get();
     }
 }

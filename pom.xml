@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.adroitlogic.uom</groupId>
+    <groupId>org.tapbeatbox.server.uom</groupId>
     <artifactId>sample-service</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -16,6 +16,7 @@
             <url>https://maven.java.net/content/repositories/snapshots/</url>
             <layout>default</layout>
         </repository>
+
     </repositories>
 
     <dependencies>
@@ -64,6 +65,31 @@
             <version>3.0-alpha-1</version>
             <scope>provided</scope>
         </dependency>
+
+
+        <!--MongoDB-->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
+        <!--jUnit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--Log For J-->
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
     </dependencies>
 
     <build>
