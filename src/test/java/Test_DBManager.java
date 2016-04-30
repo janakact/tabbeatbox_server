@@ -37,10 +37,4 @@ public class Test_DBManager {
         assertNotEquals(a,null);
     }
 
-    @Test
-    public void testUsers()
-    {
-        dbManager.getUsers();
-    }
-
 }

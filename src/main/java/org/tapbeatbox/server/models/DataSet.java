@@ -1,6 +1,7 @@
 package org.tapbeatbox.server.models;
 
 import com.mongodb.BasicDBObject;
+import com.mongodb.Block;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import com.sun.research.ws.wadl.Doc;
@@ -86,6 +87,11 @@ public class DataSet {
         db.getCollection("DataSets").deleteMany(new Document("setId", setId));
     }
 
+    /**
+     * This method is to load a single dataset from the db
+     * @param setId The id of the DataSet(Unique)
+     * @return DataSet, if it can be found
+     */
     public static DataSet getDataSet(int setId)
     {
 
@@ -93,26 +99,50 @@ public class DataSet {
         FindIterable<Document> docs = db.getCollection("DataSets").find(new Document("setId",setId));
 
         Document doc = docs.first();
+
+//        dataSet.setSlotId((int)doc.get("slotId"));
+        return convertDocToDataSet(doc);
+    }
+
+    /**
+     * Get all the data sets from the databaseS
+     * @return DataSet, if it can be found
+     */
+    public static List<DataSet> getAll()
+    {
+        final List<DataSet> list = new ArrayList<>();
+        MongoDatabase db = DbManager.getInstance().getDb();
+        FindIterable<Document> docs = db.getCollection("DataSets").find();
+
+        docs.forEach(new Block<Document>() {
+            @Override
+            public void apply(final Document document) {
+                list.add(convertDocToDataSet(document));
+            }
+        });
+
+        return list;
+    }
+
+    /**
+     * This method is to convert mongo document object to a DataSet
+     * @param doc the document to be converted
+     * @return Generated DataSet
+     */
+    private static DataSet convertDocToDataSet(final Document doc)
+    {
         DataSet dataSet = new DataSet();
         dataSet.setSlotId((int)doc.get("slotId"));
         dataSet.setSetId((int)doc.get("setId"));
         dataSet.setDeviceModel((String )doc.get("deviceModel"));
         dataSet.setDeviceId((int )doc.get("deviceId"));
 
+        List<Data> iterable = (List<Data>) doc.get("dataList");
+        dataSet.setDataList(iterable);
+
 //        dataSet.setSlotId((int)doc.get("slotId"));
         return dataSet;
     }
 
-    private static List<Data> convertToData(List<Integer> times, List<Double> values)
-    {
-        List<Data> list = new ArrayList<Data>();
-        for (int i=0; i<times.size(); i++)
-        {
-            Data d = new Data();
-            d.setTime(times.get(i));
-            d.setValue(values.get(i));
-        }
-        return list;
-    }
 
 }

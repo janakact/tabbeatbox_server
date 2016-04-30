@@ -50,17 +50,6 @@ public class DbManager {
     }
 
 
-    public int getUsers()
-    {
-        FindIterable<Document> iterable = db.getCollection("Users").find( new Document("username","janakact"));
-        iterable.forEach(new Block<Document>() {
-        @Override
-        public void apply(final Document document) {
-                logger.debug(document);
-                }
-                });
-        return 0;
-    }
 
     public boolean validateLogin(LoginResource login)
     {
