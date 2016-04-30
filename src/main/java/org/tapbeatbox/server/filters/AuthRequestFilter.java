@@ -25,20 +25,20 @@ public class AuthRequestFilter implements ContainerRequestFilter {
     public void filter(ContainerRequestContext requestContext) throws IOException {
         List<String> auth = requestContext.getHeaders().get("Authorization");
         String studentKey;
-        if (auth == null || (studentKey = auth.get(0)) == null) {
-            logger.error("A request received with an empty student key.");
-            requestContext.abortWith(
-                    Response.status(Response.Status.UNAUTHORIZED)
-                            .entity(new CustomMessageResource("Please set a valid student key in the request Authorization header.")).build()
-            );
-            return;
-        } else if (!studentKey.equals(AppConfig.STUDENT_KEY)) {
-            logger.error("A request received with an invalid student key.");
-            requestContext.abortWith(
-                    Response.status(Response.Status.UNAUTHORIZED)
-                            .entity(new CustomMessageResource("The student key is invalid.")).build()
-            );
-            return;
-        }
+//        if (auth == null || (studentKey = auth.get(0)) == null) {
+//            logger.error("A request received with an empty student key.");
+//            requestContext.abortWith(
+//                    Response.status(Response.Status.UNAUTHORIZED)
+//                            .entity(new CustomMessageResource("Please set a valid student key in the request Authorization header.")).build()
+//            );
+//            return;
+//        } else if (!studentKey.equals(AppConfig.STUDENT_KEY)) {
+//            logger.error("A request received with an invalid student key.");
+//            requestContext.abortWith(
+//                    Response.status(Response.Status.UNAUTHORIZED)
+//                            .entity(new CustomMessageResource("The student key is invalid.")).build()
+//            );
+//            return;
+//        }
     }
 }

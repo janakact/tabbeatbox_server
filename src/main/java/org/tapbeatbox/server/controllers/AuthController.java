@@ -4,7 +4,9 @@ import org.tapbeatbox.server.common.DbManager;
 import org.tapbeatbox.server.config.AppConfig;
 import org.tapbeatbox.server.resources.StudentResource;
 
+import javax.annotation.Resource;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.HeaderParam;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -40,5 +42,13 @@ public class AuthController {
 //                header("Authorization", AppConfig.STUDENT_KEY).
 //                accept(MediaType.APPLICATION_JSON_TYPE).
 //                get();
+    }
+
+    @POST
+    @Path("/")
+    @Produces("application/json")
+    public StudentResource getTest()
+    {
+        return  new StudentResource();
     }
 }

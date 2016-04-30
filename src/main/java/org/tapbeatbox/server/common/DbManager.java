@@ -16,6 +16,7 @@ import java.util.jar.Pack200;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.bson.Document;
+import org.tapbeatbox.server.resources.LoginResource;
 
 public class DbManager {
 
@@ -60,8 +61,24 @@ public class DbManager {
                 logger.debug(document);
                 }
                 });
-
         return 0;
+    }
+
+    public boolean validateLogin(LoginResource login)
+    {
+        FindIterable<Document> iterable = db.getCollection("Users").find( new Document("username","janakact"));
+        iterable.forEach(new Block<Document>() {
+            @Override
+            public void apply(final Document document) {
+                logger.debug(document);
+            }
+        });
+
+        return false;
+    }
+
+    public MongoDatabase getDb(){
+        return db;
     }
 }
 
