@@ -38,6 +38,7 @@
           <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver-core:3.2.2" />
           <element id="library" level="project" name="Maven: org.mongodb:bson:3.2.2" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.mindrot:jbcrypt:0.3m" />
         </element>
       </element>
       <element id="directory" name="META-INF">

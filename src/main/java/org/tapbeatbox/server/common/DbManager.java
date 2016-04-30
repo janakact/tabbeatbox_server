@@ -10,13 +10,8 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import org.apache.log4j.Logger;
 
-import java.util.Arrays;
-import java.util.jar.Pack200;
-
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
 import org.bson.Document;
-import org.tapbeatbox.server.resources.LoginResource;
+import org.tapbeatbox.server.models.LoginResource;
 
 public class DbManager {
 
@@ -37,11 +32,14 @@ public class DbManager {
         logger.debug("Trying to Connect");
         try{
 
+            MongoClientURI uri = new MongoClientURI("mongodb://dbuser:n1ckname@ds021751.mlab.com:21751/tapbeatbox_data");
+            MongoClient mongoClient = new MongoClient(uri );
+
             // To connect to mongodb server
-            MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+           // MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 
             // Now connect to your databases
-            db = mongoClient.getDatabase( "test" );
+            db = mongoClient.getDatabase( "tapbeatbox_data" );
             logger.debug( "Count is "+db.getCollection("DataSets").count());
             logger.debug("Connect to database successfully");
 

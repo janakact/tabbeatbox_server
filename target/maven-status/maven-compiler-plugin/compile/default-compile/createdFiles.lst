@@ -1,1 +1,4 @@
+org\tapbeatbox\server\models\DataSet.class
+org\tapbeatbox\server\common\PasswordManager.class
+org\tapbeatbox\server\models\Data.class
 org\tapbeatbox\server\common\DbManager$1.class

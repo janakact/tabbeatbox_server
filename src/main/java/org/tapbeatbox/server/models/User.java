@@ -1,12 +1,14 @@
 package org.tapbeatbox.server.models;
 
 import com.mongodb.Block;
+import com.mongodb.DB;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
+import com.sun.research.ws.wadl.Doc;
 import org.apache.log4j.Logger;
 import org.bson.Document;
 import org.tapbeatbox.server.common.DbManager;
-import org.tapbeatbox.server.resources.LoginResource;
+import org.tapbeatbox.server.common.PasswordManager;
 
 /**
  * Created by Janaka on 2016-04-30.
@@ -46,25 +48,43 @@ public class User {
     public static User login(LoginResource loginResource)
     {
         MongoDatabase db =  DbManager.getInstance().getDb();
-        FindIterable<Document> iterable = db.getCollection("Users").find( new Document("username",loginResource.getUsername()).append("password",loginResource.getPassword()));
+        FindIterable<Document> iterable = db.getCollection("Users").find( new Document("username",loginResource.getUsername()));
 
         logger.debug("Loaded data from mongo db");
         Document doc = iterable.first();
-        iterable.forEach(new Block<Document>() {
-            @Override
-            public void apply(final Document document) {
-                logger.debug(document);
-            }
-        });
+
         if(doc==null) return null;
+
 
         logger.debug("A valid user exist");
         User user = new User();
         user.setName((String)doc.get("name"));
         user.setUsername((String)doc.get("username"));
-        user.setPasswordHash((String)doc.get("password"));
+        user.setPasswordHash((String)doc.get("passwordHash"));
 
-        return user;
+        //Validate with the enterd password
+        if(PasswordManager.checkPassword(loginResource.getPassword(),user.getPasswordHash()))
+            return user;
+        return null;
     }
+
+    public static void createUser(User user)
+    {
+        MongoDatabase db = DbManager.getInstance().getDb();
+
+        Document doc = new Document("username",user.getUsername())
+                .append("name",user.getName())
+                .append("passwordHash", user.getPasswordHash());
+
+        db.getCollection("Users").insertOne(doc);
+    }
+
+    public static void removeUser(String username)
+    {
+        MongoDatabase db = DbManager.getInstance().getDb();
+        db.getCollection("Users").deleteMany(new Document("username", username));
+    }
+
+
 }
 
