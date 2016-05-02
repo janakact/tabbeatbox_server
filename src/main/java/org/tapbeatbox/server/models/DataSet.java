@@ -4,7 +4,6 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
-import com.sun.research.ws.wadl.Doc;
 import org.bson.Document;
 import org.tapbeatbox.server.common.DbManager;
 
@@ -68,7 +67,7 @@ public class DataSet {
         List<BasicDBObject> saveList = new ArrayList<>();
         List<Data> dataList = dataSet.getDataList();
         for (int i=0; i<dataList.size();i++) {
-            saveList.add(new BasicDBObject("time",dataList.get(i).getTime() ).append("value",dataList.get(i).getValue()) );
+            saveList.add(new BasicDBObject("time",dataList.get(i).getTime() ).append("x",dataList.get(i).getX()).append("y",dataList.get(i).getY()).append("z",dataList.get(i).getZ()) );
         }
 
         Document doc = new Document("slotId", dataSet.getSlotId())

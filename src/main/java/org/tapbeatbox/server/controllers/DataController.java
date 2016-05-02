@@ -16,6 +16,8 @@ import static java.util.Arrays.asList;
 @Path("/data")
 public class DataController {
 
+    private Integer id;
+
     @GET
     @Path("/all")
     @Produces("application/json")
@@ -29,10 +31,19 @@ public class DataController {
     @Path("/{id}")
     @Produces("application/json")
     public Object getOne(@PathParam("id") Integer id){
+        this.id = id;
 
         DataSet d = DataSet.getDataSet(id);
         //d.setSetId(id);
         return d;
+    }
+
+    @POST
+    @Path("/delete/{id}")
+    @Produces("application/json")
+    public Object login(@PathParam("id") Integer id){
+        DataSet.removeDataSet(id);
+        return new CustomMessageResource("Data Set is Successfully Deleted");
     }
 }
 

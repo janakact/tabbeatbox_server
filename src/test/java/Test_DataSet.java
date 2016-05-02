@@ -35,15 +35,15 @@ public class Test_DataSet {
         logger.info("Creating a new user");
         //Create a dummy user
         dataset = new DataSet();
-        dataset.setSetId(923); // Unique
+        dataset.setSetId(925); // Unique
         dataset.setDeviceId(111);
         dataset.setDeviceModel("dummyuser");
         dataset.setSlotId(32);
 
         List<Data> dataList = new ArrayList<>();
-        dataList.add(Data.getObject(12,223.3));
-        dataList.add(Data.getObject(112,2.3));
-        dataList.add(Data.getObject(92,-5.3));
+        dataList.add(Data.getObject(1,1.2,3.4,5.0));
+        dataList.add(Data.getObject(2,1.2,3.4,1.0));
+        dataList.add(Data.getObject(3,4.2,3.4,3.0));
         dataset.setDataList(dataList);
         DataSet.saveDataSet(dataset);
 

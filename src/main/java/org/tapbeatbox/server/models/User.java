@@ -78,6 +78,14 @@ public class User {
 
         db.getCollection("Users").insertOne(doc);
     }
+    public static void createUser(SignupResource userSignup) {
+        User user = new User();
+        user.setUsername(userSignup.getUsername());
+        user.setPasswordHash(PasswordManager.hashPassword(userSignup.getPassword()));
+        user.setName(userSignup.getName());
+
+        User.createUser(user);
+    }
 
     public static void removeUser(String username)
     {

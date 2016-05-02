@@ -47,7 +47,7 @@ public class Test_User {
     @After
     public void cleanUp() {
         logger.info("Removing the created user");
-        User.removeUser(user.getUsername());
+       // User.removeUser(user.getUsername());
         logger.debug("Testing Done! - User");
     }
 

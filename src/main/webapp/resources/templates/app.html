@@ -60,8 +60,8 @@
                     <div class="panel-body text-center">
                         <div class="row">
                             <div class="col-xs-12">
-                                <select class="form-control" (change)="setStudentOne($event.target.value)">
-                                    <option *ngFor="#student of studentsList;#i=index" [value]="i">{{student.name}}
+                                <select class="form-control" (change)="setStudentOne($event.target.x)">
+                                    <option *ngFor="#student of studentsList;#i=index" [x]="i">{{student.name}}
                                     </option>
                                 </select>
                             </div>
@@ -88,8 +88,8 @@
                     <div class="panel-body text-center">
                         <div class="row">
                             <div class="col-xs-12">
-                                <select class="form-control" (change)="setStudentTwo($event.target.value)">
-                                    <option *ngFor="#student of studentsList;#i=index" [value]="i">{{student.name}}
+                                <select class="form-control" (change)="setStudentTwo($event.target.x)">
+                                    <option *ngFor="#student of studentsList;#i=index" [x]="i">{{student.name}}
                                     </option>
                                 </select>
                             </div>
