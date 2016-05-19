@@ -3,6 +3,7 @@
  */
 angular.module('tapBeatBoxApp', [])
     .controller('mainCtrl',function($scope, $http) {
+
         $scope.username = "";
         $scope.password = "";
 
@@ -95,131 +96,58 @@ angular.module('tapBeatBoxApp', [])
 
 
         $scope.displayOne = function (id) {
-            $http.get('/rest/data/'+id).success( function(data,status){
                 $scope.showGraph = true;
-                $scope.message = data;
+                var data = $scope.allData[id];
                // $scope.oneData = data;
                 $scope.allData = [];
                 $scope.allData.push(data);
-
+                $scope.message = data;
                 var dataList = data.dataList;
                 var  lables = [];
                 var x = [],y=[],z=[];
                 for(var i=0; i<dataList.length;i++)
                 {
                     lables.push(dataList[i].time);
-                    x.push(dataList[i].x);
-                    y.push(dataList[i].y);
-                    z.push(dataList[i].z);
+                    x.push([dataList[i].time,dataList[i].x]);
+                    y.push([dataList[i].time,dataList[i].y]);
+                    z.push([dataList[i].time,dataList[i].z]);
                 }
 
-                var ctx = document.getElementById("myChart");
-                var data = {
-                    labels: lables,
-                    datasets: [
-                        {
-                            label: "X-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(75,192,192,0.4)",
-                            borderColor: "rgba(75,192,192,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(75,192,192,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                            pointHoverBorderColor: "rgba(220,220,220,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: x,
+                window.setTimeout(function() {
+                    $.jqplot('chartdiv',  [x,y,z],{ title:'Data',
+                        axes:{
+                            xaxis:{
+                                min:0,
+                                label:'Time(ms)'
+                            },
+                            yaxis:{
+                                label:'Magnitude(ms-2)'
+                            }},
+// Set default options on all series, turn on smoothing.
+                        seriesDefaults: {
+                            rendererOptions: {
+                                smooth: true
+                            }
                         },
-                        {
-                            label: "Y-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(200,100,100,1)",
-                            borderColor: "rgba(200,100,100,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(200,100,100,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(200,100,100,1)",
-                            pointHoverBorderColor: "rgba(200,100,100,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: y,
-                        },
-                        {
-                            label: "Z-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(100,200,100,1)",
-                            borderColor: "rgba(100,200,100,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(100,200,100,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(100,200,100,1)",
-                            pointHoverBorderColor: "rgba(100,200,100,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: z,
-                        }
-                    ]
-                };
-
-
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: data,
-                    options:  {
-                        responsive: true,
-                        legend: {
-                            position: 'bottom',
-                        },
-                        hover: {
-                            mode: 'label'
-                        },
-                        scales: {
-                            xAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Month'
-                                }
-                            }],
-                            yAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Value'
-                                }
+                        series:[{color:"RED",
+                                // Change our line width and use a diamond shaped marker.
+                                lineWidth:2,
+                                markerOptions: { size: 2, style:"x" }
+                            },
+                            {color:'Green',
+                            // Change our line width and use a diamond shaped marker.
+                            lineWidth:2,
+                                markerOptions: { size: 2, style:"o" }
+                            },
+                            {color:'Blue',
+                            // Change our line width and use a diamond shaped marker.
+                            lineWidth:2,
+                           // showMarker: false
+                                markerOptions: { size: 2, style:"o" }
                             }]
-                        },
-                        title: {
-                            display: true,
-                            text: 'Chart.js Line Chart - Legend'
-                        }
-                    }
-                });
+                    });
+                }, 100);
 
-
-            });
         }
 
         $scope.displayAllData();

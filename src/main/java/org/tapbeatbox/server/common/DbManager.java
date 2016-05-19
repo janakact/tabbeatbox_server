@@ -20,6 +20,7 @@ public class DbManager {
 
     private static DbManager dbManager;
 
+    //Singleton create instance
     public static DbManager getInstance()
     {
         if(dbManager==null) dbManager = new DbManager();
@@ -49,35 +50,8 @@ public class DbManager {
         }
     }
 
-
-
-    public boolean validateLogin(LoginResource login)
-    {
-        FindIterable<Document> iterable = db.getCollection("Users").find( new Document("username","janakact"));
-        iterable.forEach(new Block<Document>() {
-            @Override
-            public void apply(final Document document) {
-                logger.debug(document);
-            }
-        });
-
-        return false;
-    }
-
+//    Return the database for use in other methods
     public MongoDatabase getDb(){
         return db;
     }
 }
-
-
-//iterable.forEach(new Block<Document>() {
-//@Override
-//public void apply(final Document document) {
-//        System.out.println(document);
-//        }
-//        });
-
-//FindIterable<Document> iterable = db.getCollection("restaurants").find();
-//
-//    FindIterable<Document> iterable = db.getCollection("restaurants").find(
-//            new Document("borough", "Manhattan"));

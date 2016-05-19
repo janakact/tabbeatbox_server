@@ -19,6 +19,7 @@ public class DataSet {
     private int slotId; //Specify the slot
     private int deviceId;
     private String deviceModel;
+    private String id;
 
     public List<Data> getDataList() {
         return dataList;
@@ -135,6 +136,7 @@ public class DataSet {
         dataSet.setSetId((int)doc.get("setId"));
         dataSet.setDeviceModel((String )doc.get("deviceModel"));
         dataSet.setDeviceId((int )doc.get("deviceId"));
+        dataSet.setId(doc.get("_id").toString());
 
         List<Data> iterable = (List<Data>) doc.get("dataList");
         dataSet.setDataList(iterable);
@@ -144,4 +146,11 @@ public class DataSet {
     }
 
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

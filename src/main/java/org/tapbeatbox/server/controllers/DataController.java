@@ -1,23 +1,22 @@
 package org.tapbeatbox.server.controllers;
 
 import org.tapbeatbox.server.models.*;
-import org.tapbeatbox.server.resources.CustomMessageResource;
+import org.tapbeatbox.server.models.CustomMessageResource;
 
 import javax.ws.rs.*;
 
 import java.util.List;
 
-import static java.util.Arrays.asList;
-
 
 /**
- * @author Adroitlogic
+ * @author Janaka Chathuranga
  */
 @Path("/data")
 public class DataController {
 
     private Integer id;
 
+//    Return all the datasets
     @GET
     @Path("/all")
     @Produces("application/json")
@@ -27,6 +26,7 @@ public class DataController {
         return d;
     }
 
+//    return a specific dataset
     @GET
     @Path("/{id}")
     @Produces("application/json")
@@ -34,16 +34,29 @@ public class DataController {
         this.id = id;
 
         DataSet d = DataSet.getDataSet(id);
-        //d.setSetId(id);
         return d;
     }
 
+//    Delete a specific dataset
     @POST
     @Path("/delete/{id}")
     @Produces("application/json")
     public Object login(@PathParam("id") Integer id){
         DataSet.removeDataSet(id);
         return new CustomMessageResource("Data Set is Successfully Deleted");
+    }
+
+    //    Add data
+    @POST
+    @Path("/add")
+    @Produces("application/json")
+    @Consumes("application/json")
+    public Object add(DataSet dataSet){
+
+        //return new CustomMessageResource( dataSet.getSlotId()+"");
+
+        DataSet.saveDataSet(dataSet);
+        return new CustomMessageResource("Data Set is Successfully Saved");
     }
 }
 

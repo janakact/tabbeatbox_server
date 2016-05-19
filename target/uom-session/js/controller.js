@@ -3,6 +3,7 @@
  */
 angular.module('tapBeatBoxApp', [])
     .controller('mainCtrl',function($scope, $http) {
+
         $scope.username = "";
         $scope.password = "";
 
@@ -96,6 +97,8 @@ angular.module('tapBeatBoxApp', [])
 
         $scope.displayOne = function (id) {
             $http.get('/rest/data/'+id).success( function(data,status){
+
+
                 $scope.showGraph = true;
                 $scope.message = data;
                // $scope.oneData = data;
@@ -108,117 +111,15 @@ angular.module('tapBeatBoxApp', [])
                 for(var i=0; i<dataList.length;i++)
                 {
                     lables.push(dataList[i].time);
-                    x.push(dataList[i].x);
-                    y.push(dataList[i].y);
-                    z.push(dataList[i].z);
+                    x.push([dataList[i].time,dataList[i].x]);
+                    y.push([dataList[i].time,dataList[i].y]);
+                    z.push([dataList[i].time,dataList[i].z]);
                 }
 
-                var ctx = document.getElementById("myChart");
-                var data = {
-                    labels: lables,
-                    datasets: [
-                        {
-                            label: "X-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(75,192,192,0.4)",
-                            borderColor: "rgba(75,192,192,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(75,192,192,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                            pointHoverBorderColor: "rgba(220,220,220,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: x,
-                        },
-                        {
-                            label: "Y-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(200,100,100,1)",
-                            borderColor: "rgba(200,100,100,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(200,100,100,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(200,100,100,1)",
-                            pointHoverBorderColor: "rgba(200,100,100,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: y,
-                        },
-                        {
-                            label: "Z-Axiz",
-                            fill: false,
-                            lineTension: 0.1,
-                            backgroundColor: "rgba(100,200,100,1)",
-                            borderColor: "rgba(100,200,100,1)",
-                            borderCapStyle: 'butt',
-                            borderDash: [],
-                            borderDashOffset: 0.0,
-                            borderJoinStyle: 'miter',
-                            pointBorderColor: "rgba(100,200,100,1)",
-                            pointBackgroundColor: "#fff",
-                            pointBorderWidth: 1,
-                            pointHoverRadius: 5,
-                            pointHoverBackgroundColor: "rgba(100,200,100,1)",
-                            pointHoverBorderColor: "rgba(100,200,100,1)",
-                            pointHoverBorderWidth: 2,
-                            pointRadius: 1,
-                            pointHitRadius: 10,
-                            data: z,
-                        }
-                    ]
-                };
-
-
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: data,
-                    options:  {
-                        responsive: true,
-                        legend: {
-                            position: 'bottom',
-                        },
-                        hover: {
-                            mode: 'label'
-                        },
-                        scales: {
-                            xAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Month'
-                                }
-                            }],
-                            yAxes: [{
-                                display: true,
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Value'
-                                }
-                            }]
-                        },
-                        title: {
-                            display: true,
-                            text: 'Chart.js Line Chart - Legend'
-                        }
-                    }
+                $.jqplot('chartdiv',  [x,y,z],{ title:'Data',
+                    axes:{yaxis:{min:-10, max:240}},
+                    series:[{color:'#5FAB78'}]
                 });
-
-
             });
         }
 

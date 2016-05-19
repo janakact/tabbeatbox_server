@@ -20,8 +20,11 @@ public class Test_DBManager {
 
     @Before
     public void setUp() {
+        //Configure the logger
         BasicConfigurator.configure();
         logger.debug("Testing Starting");
+
+        //Create a DBManager Instance
         dbManager = DbManager.getInstance();
         logger.debug("Instance Created");
     }
@@ -33,6 +36,7 @@ public class Test_DBManager {
 
     @Test
     public void testConnection() {
+        //Check it is possible to get an instance. It is required to connect to the db to get an instance
         Object a = DbManager.getInstance();
         assertNotEquals(a,null);
     }

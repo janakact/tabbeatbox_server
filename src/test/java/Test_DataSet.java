@@ -28,11 +28,12 @@ public class Test_DataSet {
 
     @Before
     public void setUp() {
+        //Configure the logger
         BasicConfigurator.configure();
-        logger.debug("Testing Starting - User");
+        logger.debug("Testing Starting - DataSet");
 
 
-        logger.info("Creating a new user");
+        logger.info("Creating a new Dataset");
         //Create a dummy user
         dataset = new DataSet();
         dataset.setSetId(925); // Unique
@@ -40,6 +41,7 @@ public class Test_DataSet {
         dataset.setDeviceModel("dummyuser");
         dataset.setSlotId(32);
 
+        //Create Data
         List<Data> dataList = new ArrayList<>();
         dataList.add(Data.getObject(1,1.2,3.4,5.0));
         dataList.add(Data.getObject(2,1.2,3.4,1.0));
@@ -52,16 +54,16 @@ public class Test_DataSet {
 
     @After
     public void cleanUp() {
-        logger.info("Removing the created user");
+        logger.info("Removing the created dataset");
 //        DataSet.removeDataSet(dataset.getSetId());
-        logger.debug("Testing Done! - User");
+        logger.debug("Testing Done! - DataSet");
     }
 
 
     @Test
     public void testForInsertedDataSet() {
-        logger.info("Trying to login with the new user");
-        //Try login with the created user
+        logger.info("Trying load the created dataset");
+        //Try load the dataset back and check for validity
         DataSet ds = DataSet.getDataSet(dataset.getSetId());
         assertNotEquals(ds,null);
         assertEquals(ds.getDeviceId(),dataset.getDeviceId());

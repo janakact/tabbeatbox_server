@@ -23,13 +23,12 @@ public class Test_User {
 
     @Before
     public void setUp() {
+        //Configure the logger
         BasicConfigurator.configure();
         logger.debug("Testing Starting - User");
 
 
         logger.info("Creating a new user");
-
-
 
         //Create a dummy user
         user = new User();
@@ -45,9 +44,11 @@ public class Test_User {
 
 
     @After
-    public void cleanUp() {
+    public void cleanUp()
+    {
+        //Remove the created user
         logger.info("Removing the created user");
-       // User.removeUser(user.getUsername());
+        User.removeUser(user.getUsername());
         logger.debug("Testing Done! - User");
     }
 
@@ -60,6 +61,7 @@ public class Test_User {
         loginResource.setPassword(userPassword);
         loginResource.setUsername(user.getUsername());
 
+        //Check the login is successful
         User loadedUser = User.login(loginResource);
         assertNotEquals(loadedUser,null);
         assertEquals(loadedUser.getName(), user.getName());
