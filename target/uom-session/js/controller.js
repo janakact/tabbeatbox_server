@@ -96,15 +96,12 @@ angular.module('tapBeatBoxApp', [])
 
 
         $scope.displayOne = function (id) {
-            $http.get('/rest/data/'+id).success( function(data,status){
-
-
                 $scope.showGraph = true;
-                $scope.message = data;
+                var data = $scope.allData[id];
                // $scope.oneData = data;
                 $scope.allData = [];
                 $scope.allData.push(data);
-
+                $scope.message = data;
                 var dataList = data.dataList;
                 var  lables = [];
                 var x = [],y=[],z=[];
@@ -116,11 +113,41 @@ angular.module('tapBeatBoxApp', [])
                     z.push([dataList[i].time,dataList[i].z]);
                 }
 
-                $.jqplot('chartdiv',  [x,y,z],{ title:'Data',
-                    axes:{yaxis:{min:-10, max:240}},
-                    series:[{color:'#5FAB78'}]
-                });
-            });
+                window.setTimeout(function() {
+                    $.jqplot('chartdiv',  [x,y,z],{ title:'Data',
+                        axes:{
+                            xaxis:{
+                                min:0,
+                                label:'Time(ms)'
+                            },
+                            yaxis:{
+                                label:'Magnitude(ms-2)'
+                            }},
+// Set default options on all series, turn on smoothing.
+                        seriesDefaults: {
+                            rendererOptions: {
+                                smooth: true
+                            }
+                        },
+                        series:[{color:"RED",
+                                // Change our line width and use a diamond shaped marker.
+                                lineWidth:2,
+                                markerOptions: { size: 2, style:"x" }
+                            },
+                            {color:'Green',
+                            // Change our line width and use a diamond shaped marker.
+                            lineWidth:2,
+                                markerOptions: { size: 2, style:"o" }
+                            },
+                            {color:'Blue',
+                            // Change our line width and use a diamond shaped marker.
+                            lineWidth:2,
+                           // showMarker: false
+                                markerOptions: { size: 2, style:"o" }
+                            }]
+                    });
+                }, 100);
+
         }
 
         $scope.displayAllData();

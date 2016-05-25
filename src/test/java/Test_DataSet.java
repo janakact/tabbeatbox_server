@@ -36,7 +36,6 @@ public class Test_DataSet {
         logger.info("Creating a new Dataset");
         //Create a dummy user
         dataset = new DataSet();
-        dataset.setSetId(925); // Unique
         dataset.setDeviceId(111);
         dataset.setDeviceModel("dummyuser");
         dataset.setSlotId(32);

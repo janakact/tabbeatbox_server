@@ -5,6 +5,7 @@ import com.mongodb.Block;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.tapbeatbox.server.common.DbManager;
 
 import java.util.*;
@@ -15,7 +16,7 @@ import java.util.*;
  */
 public class DataSet {
     private List<Data> dataList;    // List of readings
-    private int setId; //Unique for the set
+    private String setId; //Unique for the set
     private int slotId; //Specify the slot
     private int deviceId;
     private String deviceModel;
@@ -53,11 +54,11 @@ public class DataSet {
         this.deviceModel = deviceModel;
     }
 
-    public int getSetId() {
+    public String getSetId() {
         return setId;
     }
 
-    public void setSetId(int setId) {
+    public void setSetId(String setId) {
         this.setId = setId;
     }
 
@@ -72,7 +73,7 @@ public class DataSet {
         }
 
         Document doc = new Document("slotId", dataSet.getSlotId())
-                .append("setId",dataSet.getSetId())
+               // .append("setId",dataSet.getSetId())
                 .append("deviceId",dataSet.getDeviceId())
                 .append("deviceModel",dataSet.getDeviceModel())
                 .append("dataList",saveList);
@@ -81,10 +82,10 @@ public class DataSet {
     }
 
     //Remove from the database
-    public static void removeDataSet(int setId)
+    public static void removeDataSet(String setId)
     {
         MongoDatabase db = DbManager.getInstance().getDb();
-        db.getCollection("DataSets").deleteMany(new Document("setId", setId));
+        db.getCollection("DataSets").deleteMany(new Document("_id", setId));
     }
 
     /**
@@ -92,11 +93,11 @@ public class DataSet {
      * @param setId The id of the DataSet(Unique)
      * @return DataSet, if it can be found
      */
-    public static DataSet getDataSet(int setId)
+    public static DataSet getDataSet(String setId)
     {
 
         MongoDatabase db = DbManager.getInstance().getDb();
-        FindIterable<Document> docs = db.getCollection("DataSets").find(new Document("setId",setId));
+        FindIterable<Document> docs = db.getCollection("DataSets").find(new Document("_id",setId));
 
         Document doc = docs.first();
 
@@ -133,7 +134,9 @@ public class DataSet {
     {
         DataSet dataSet = new DataSet();
         dataSet.setSlotId((int)doc.get("slotId"));
-        dataSet.setSetId((int)doc.get("setId"));
+
+
+        dataSet.setSetId(((ObjectId) doc.get("_id")).toString());
         dataSet.setDeviceModel((String )doc.get("deviceModel"));
         dataSet.setDeviceId((int )doc.get("deviceId"));
         dataSet.setId(doc.get("_id").toString());

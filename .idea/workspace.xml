@@ -7,114 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e2d8a62-5f76-4291-b0ab-b08483b7b498" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/New Text Document.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/AuthController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/CoupleController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/StudentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/exceptions/ExceptionMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/filters/AuthRequestFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/filters/CorsResponseFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataRequestResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/resources/MatchResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/resources/PairResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/resources/StudentResource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/components/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/components/feedback.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/models/match.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/models/pair.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/models/student.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/modules/alert/alert.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/modules/alert/alert.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/services/feedback.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/services/match.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/services/rest.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/app/services/rest.service.js.orig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/feedback.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/templates/modules/alert/alert.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/common/DbManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/AuthController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/CoupleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/StudentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/exceptions/ExceptionMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/filters/AuthRequestFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/filters/CorsResponseFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/DataRequestResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/resources/CustomMessageResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/resources/MatchResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/resources/PairResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/resources/StudentResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/common/DbManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/AuthController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/CoupleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/StudentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/exceptions/ExceptionMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/filters/AuthRequestFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/filters/CorsResponseFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/DataRequestResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/resources/CustomMessageResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/resources/MatchResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/resources/PairResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/resources/StudentResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/components/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/components/feedback.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/models/match.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/models/pair.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/models/student.model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/modules/alert/alert.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/modules/alert/alert.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/services/feedback.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/services/match.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/services/rest.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/app/services/rest.service.js.orig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/resources/templates/app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/resources/templates/feedback.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/uom-session/resources/templates/modules/alert/alert.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/resources/CustomMessageResource.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/CustomMessageResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/ROOT/ROOT.war" afterPath="$PROJECT_DIR$/classes/artifacts/ROOT/ROOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/common/DbManager.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/common/DbManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/config/AppConfig.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/config/AppConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/DataController.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/DataController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/UserController.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/DataSet$1.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/DataSet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/DataSet.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/DataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/User.class" afterPath="$PROJECT_DIR$/target/classes/org/tapbeatbox/server/models/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Test_DBManager.class" afterPath="$PROJECT_DIR$/target/test-classes/Test_DBManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Test_DataSet.class" afterPath="$PROJECT_DIR$/target/test-classes/Test_DataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Test_User.class" afterPath="$PROJECT_DIR$/target/test-classes/Test_User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/common/DbManager.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/common/DbManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/config/AppConfig.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/config/AppConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/DataController.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/DataController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/UserController.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/DataSet$1.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/DataSet$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/DataSet.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/DataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/User.class" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/classes/org/tapbeatbox/server/models/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/config/AppConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java" afterPath="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/controller.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Test_DBManager.java" afterPath="$PROJECT_DIR$/src/test/java/Test_DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Test_DataSet.java" afterPath="$PROJECT_DIR$/src/test/java/Test_DataSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Test_User.java" afterPath="$PROJECT_DIR$/src/test/java/Test_User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Test_DataSet.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Test_DataSet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Test_User.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Test_User.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Test_DataSet.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_DataSet.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Test_User.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/Test_User.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/uom-session/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/index.html" afterPath="$PROJECT_DIR$/target/uom-session/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/uom-session/js/controller.js" afterPath="$PROJECT_DIR$/target/uom-session/js/controller.js" />
     </list>
     <ignored path="sample-service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,9 +37,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94848484">
-              <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="-0.54545456">
+              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,18 +49,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5660377">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/config/AppConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -183,7 +72,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
+              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -193,35 +92,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="22" />
+              <caret line="99" column="91" selection-start-line="99" selection-start-column="91" selection-end-line="99" selection-end-column="91" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#604#605#0" expanded="false" />
-                <element signature="e#635#636#0" expanded="false" />
-                <element signature="e#687#688#0" expanded="false" />
-                <element signature="e#727#728#0" expanded="false" />
-                <element signature="e#757#758#0" expanded="false" />
-                <element signature="e#786#787#0" expanded="false" />
-                <element signature="e#827#828#0" expanded="false" />
-                <element signature="e#863#864#0" expanded="false" />
-                <element signature="e#895#896#0" expanded="false" />
-                <element signature="e#926#927#0" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#1011#1012#0" expanded="false" />
-                <element signature="e#1049#1050#0" expanded="false" />
-                <element signature="e#1083#1084#0" expanded="false" />
-                <element signature="e#1137#1138#0" expanded="false" />
-                <element signature="e#1183#1184#0" expanded="false" />
-                <element signature="e#1212#1213#0" expanded="false" />
-                <element signature="e#1240#1241#0" expanded="false" />
-                <element signature="e#1279#1280#0" expanded="false" />
-                <element signature="e#1313#1314#0" expanded="false" />
-                <element signature="e#3388#3389#0" expanded="false" />
-                <element signature="e#3459#3460#0" expanded="false" />
-                <element signature="e#4267#4268#0" expanded="false" />
-                <element signature="e#4292#4293#0" expanded="false" />
-                <element signature="e#4328#4329#0" expanded="false" />
-                <element signature="e#4356#4357#0" expanded="false" />
+                <element signature="e#1172#1173#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,11 +105,8 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/Test_DataSet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,24 +116,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-              <folding>
-                <element signature="e#217#218#0" expanded="false" />
-                <element signature="e#241#242#0" expanded="false" />
-                <element signature="e#275#276#0" expanded="false" />
-                <element signature="e#301#302#0" expanded="false" />
-                <element signature="e#329#330#0" expanded="false" />
-                <element signature="e#356#357#0" expanded="false" />
-                <element signature="e#393#394#0" expanded="false" />
-                <element signature="e#425#426#0" expanded="false" />
-                <element signature="e#669#670#0" expanded="false" />
-                <element signature="e#693#694#0" expanded="false" />
-                <element signature="e#727#728#0" expanded="false" />
-                <element signature="e#753#754#0" expanded="false" />
-                <element signature="e#781#782#0" expanded="false" />
-                <element signature="e#805#806#0" expanded="false" />
-                <element signature="e#839#840#0" expanded="false" />
-                <element signature="e#865#866#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -272,12 +126,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="e#706#707#0" expanded="false" />
-                <element signature="e#732#733#0" expanded="false" />
-                <element signature="e#770#771#0" expanded="false" />
-                <element signature="e#800#801#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -287,9 +136,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="19" column="50" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -343,15 +190,15 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Test_User.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test_DBManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test_DataSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/resources/StudentResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/test/java/Test_DataSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
       </list>
     </option>
@@ -446,6 +293,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -823,8 +672,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1394,7 +1241,8 @@
       <workItem from="1462955930906" duration="5631000" />
       <workItem from="1463031016840" duration="650000" />
       <workItem from="1463118929348" duration="19000" />
-      <workItem from="1463645783377" duration="5409000" />
+      <workItem from="1463645783377" duration="6006000" />
+      <workItem from="1464148863287" duration="1686000" />
     </task>
     <servers />
   </component>
@@ -1404,7 +1252,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91831000" />
+    <option name="totallyTimeSpent" value="94114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1416,12 +1264,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5029542" order="8" side_tool="true" content_ui="tabs" />
@@ -1501,9 +1349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1511,11 +1357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,7 +1365,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1558,33 +1402,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#786#787#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1083#1084#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1212#1213#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#3388#3389#0" expanded="false" />
-            <element signature="e#3459#3460#0" expanded="false" />
-            <element signature="e#4267#4268#0" expanded="false" />
-            <element signature="e#4292#4293#0" expanded="false" />
-            <element signature="e#4328#4329#0" expanded="false" />
-            <element signature="e#4356#4357#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1601,12 +1420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-            <element signature="e#770#771#0" expanded="false" />
-            <element signature="e#800#801#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1621,9 +1435,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1631,11 +1443,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1643,10 +1451,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1654,7 +1459,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1689,33 +1496,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#786#787#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1083#1084#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1212#1213#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#3388#3389#0" expanded="false" />
-            <element signature="e#3459#3460#0" expanded="false" />
-            <element signature="e#4267#4268#0" expanded="false" />
-            <element signature="e#4292#4293#0" expanded="false" />
-            <element signature="e#4328#4329#0" expanded="false" />
-            <element signature="e#4356#4357#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1739,9 +1521,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1749,11 +1529,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1886,18 +1662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1565#1566#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1910,12 +1674,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-            <element signature="e#770#771#0" expanded="false" />
-            <element signature="e#800#801#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1923,89 +1682,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-          <folding>
-            <element signature="e#217#218#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
-            <element signature="e#275#276#0" expanded="false" />
-            <element signature="e#301#302#0" expanded="false" />
-            <element signature="e#329#330#0" expanded="false" />
-            <element signature="e#356#357#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-            <element signature="e#425#426#0" expanded="false" />
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#693#694#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#753#754#0" expanded="false" />
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#839#840#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#786#787#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#863#864#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1049#1050#0" expanded="false" />
-            <element signature="e#1083#1084#0" expanded="false" />
-            <element signature="e#1137#1138#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1212#1213#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-            <element signature="e#1313#1314#0" expanded="false" />
-            <element signature="e#3388#3389#0" expanded="false" />
-            <element signature="e#3459#3460#0" expanded="false" />
-            <element signature="e#4267#4268#0" expanded="false" />
-            <element signature="e#4292#4293#0" expanded="false" />
-            <element signature="e#4328#4329#0" expanded="false" />
-            <element signature="e#4356#4357#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test_DataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2021,17 +1698,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5660377">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/common/DbManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test_DataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/controllers/DataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/tapbeatbox/server/models/DataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="91" selection-start-line="99" selection-start-column="91" selection-end-line="99" selection-end-column="91" />
+          <folding>
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94848484">
-          <caret line="142" column="42" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="-0.54545456">
+          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
