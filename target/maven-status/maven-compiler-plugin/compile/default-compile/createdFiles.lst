@@ -1,16 +1,10 @@
 org\tapbeatbox\server\models\DataSet.class
-org\tapbeatbox\server\resources\PairResource.class
 org\tapbeatbox\server\controllers\DataController.class
-org\tapbeatbox\server\resources\StudentResource.class
 org\tapbeatbox\server\common\DbManager.class
-org\tapbeatbox\server\resources\CustomMessageResource.class
 org\tapbeatbox\server\common\PasswordManager.class
 org\tapbeatbox\server\config\AppConfig.class
 org\tapbeatbox\server\controllers\UserController.class
-org\tapbeatbox\server\exceptions\ExceptionMapper.class
 org\tapbeatbox\server\models\User.class
-org\tapbeatbox\server\resources\MatchResource.class
 org\tapbeatbox\server\models\Data.class
 org\tapbeatbox\server\models\LoginResource.class
-org\tapbeatbox\server\common\DbManager$1.class
 org\tapbeatbox\server\models\DataSet$1.class

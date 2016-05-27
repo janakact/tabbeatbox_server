@@ -63,7 +63,7 @@ public class DataSet {
     }
 
     //Save into the database
-    public static void saveDataSet(DataSet dataSet)
+    public static String saveDataSet(DataSet dataSet)
     {
         MongoDatabase db = DbManager.getInstance().getDb();
         List<BasicDBObject> saveList = new ArrayList<>();
@@ -79,6 +79,7 @@ public class DataSet {
                 .append("dataList",saveList);
 
         db.getCollection("DataSets").insertOne(doc);
+        return ((ObjectId) doc.get("_id")).toString();
     }
 
     //Remove from the database
@@ -97,7 +98,7 @@ public class DataSet {
     {
 
         MongoDatabase db = DbManager.getInstance().getDb();
-        FindIterable<Document> docs = db.getCollection("DataSets").find(new Document("_id",setId));
+        FindIterable<Document> docs = db.getCollection("DataSets").find(new Document("_id",new ObjectId(setId)));
 
         Document doc = docs.first();
 

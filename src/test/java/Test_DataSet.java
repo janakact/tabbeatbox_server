@@ -24,7 +24,7 @@ public class Test_DataSet {
     static final Logger logger = Logger.getLogger(Test_DBManager.class);
 
     DataSet dataset;
-    String userPassword;
+    String docId;
 
     @Before
     public void setUp() {
@@ -46,7 +46,10 @@ public class Test_DataSet {
         dataList.add(Data.getObject(2,1.2,3.4,1.0));
         dataList.add(Data.getObject(3,4.2,3.4,3.0));
         dataset.setDataList(dataList);
-        DataSet.saveDataSet(dataset);
+        docId = DataSet.saveDataSet(dataset);
+
+        dataset.setSetId(docId);
+        logger.info("Saved the Dataset with ID:"+docId);
 
     }
 
@@ -63,7 +66,7 @@ public class Test_DataSet {
     public void testForInsertedDataSet() {
         logger.info("Trying load the created dataset");
         //Try load the dataset back and check for validity
-        DataSet ds = DataSet.getDataSet(dataset.getSetId());
+        DataSet ds = DataSet.getDataSet(docId);
         assertNotEquals(ds,null);
         assertEquals(ds.getDeviceId(),dataset.getDeviceId());
         assertEquals(ds.getDeviceModel(),dataset.getDeviceModel());
