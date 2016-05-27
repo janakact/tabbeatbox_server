@@ -27,7 +27,7 @@ public class Test_User {
         BasicConfigurator.configure();
         logger.debug("Testing Starting - User");
 
-
+        //write the log
         logger.info("Creating a new user");
 
         //Create a dummy user
