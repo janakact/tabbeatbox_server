@@ -2,6 +2,7 @@
  * Created by Janaka on 2016-04-30.
  */
 
+import org.apache.logging.log4j.core.util.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -37,7 +38,7 @@ public class Test_DataSet {
         //Create a dummy user
         dataset = new DataSet();
         dataset.setDeviceId(111);
-        dataset.setDeviceModel("dummyuser");
+        dataset.setDeviceModel("datasetNow");
         dataset.setSlotId(32);
 
         //Create Data
@@ -57,22 +58,32 @@ public class Test_DataSet {
     @After
     public void cleanUp() {
         logger.info("Removing the created dataset");
-//        DataSet.removeDataSet(dataset.getSetId());
+        DataSet.removeDataSet(dataset.getSetId());
+        assertEquals(DataSet.getDataSet(dataset.getSetId()),null);
         logger.debug("Testing Done! - DataSet");
     }
 
 
     @Test
-    public void testForInsertedDataSet() {
+    public void testForDataExistence() {
         logger.info("Trying load the created dataset");
         //Try load the dataset back and check for validity
         DataSet ds = DataSet.getDataSet(docId);
         assertNotEquals(ds,null);
+    }
+
+
+    @Test
+    public void testForDataValidity() {
+        //Try load the dataset back and check for validity
+        DataSet ds = DataSet.getDataSet(docId);
         assertEquals(ds.getDeviceId(),dataset.getDeviceId());
         assertEquals(ds.getDeviceModel(),dataset.getDeviceModel());
         assertEquals(ds.getSetId(),dataset.getSetId());
         assertEquals(ds.getSlotId(),dataset.getSlotId());
+        logger.info("Created the Data sate at time: " +ds.getTime());
     }
+
 
 
 }

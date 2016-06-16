@@ -145,7 +145,7 @@ angular.module('tapBeatBoxApp', [])
                            // showMarker: false
                                 markerOptions: { size: 2, style:"o" }
                             }]
-                    });
+                    }).replot();;
                 }, 100);
 
         }

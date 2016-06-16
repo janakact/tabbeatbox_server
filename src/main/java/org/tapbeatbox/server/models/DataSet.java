@@ -8,6 +8,7 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.tapbeatbox.server.common.DbManager;
 
+import java.text.DateFormat;
 import java.util.*;
 
 
@@ -21,6 +22,7 @@ public class DataSet {
     private int deviceId;
     private String deviceModel;
     private String id;
+    private Date time;
 
     public List<Data> getDataList() {
         return dataList;
@@ -76,7 +78,8 @@ public class DataSet {
                // .append("setId",dataSet.getSetId())
                 .append("deviceId",dataSet.getDeviceId())
                 .append("deviceModel",dataSet.getDeviceModel())
-                .append("dataList",saveList);
+                .append("dataList",saveList)
+                .append("time",new Date());
 
         db.getCollection("DataSets").insertOne(doc);
         return ((ObjectId) doc.get("_id")).toString();
@@ -86,7 +89,7 @@ public class DataSet {
     public static void removeDataSet(String setId)
     {
         MongoDatabase db = DbManager.getInstance().getDb();
-        db.getCollection("DataSets").deleteMany(new Document("_id", setId));
+        db.getCollection("DataSets").deleteMany(new Document("_id", new ObjectId(setId)));
     }
 
     /**
@@ -133,6 +136,7 @@ public class DataSet {
      */
     private static DataSet convertDocToDataSet(final Document doc)
     {
+        if(doc==null) return null;
         DataSet dataSet = new DataSet();
         dataSet.setSlotId((int)doc.get("slotId"));
 
@@ -142,8 +146,28 @@ public class DataSet {
         dataSet.setDeviceId((int )doc.get("deviceId"));
         dataSet.setId(doc.get("_id").toString());
 
+
         List<Data> iterable = (List<Data>) doc.get("dataList");
+        dataSet.setTime((Date)(doc.get("time")));
         dataSet.setDataList(iterable);
+
+//        dataSet.setSlotId((int)doc.get("slotId"));
+        return dataSet;
+    }
+
+    private static DataSet convertDocToDataSetAll(final Document doc)
+    {
+        if(doc==null) return null;
+        DataSet dataSet = new DataSet();
+        dataSet.setSlotId((int)doc.get("slotId"));
+
+
+        dataSet.setSetId(((ObjectId) doc.get("_id")).toString());
+        dataSet.setDeviceModel((String )doc.get("deviceModel"));
+        dataSet.setDeviceId((int )doc.get("deviceId"));
+        dataSet.setId(doc.get("_id").toString());
+
+        dataSet.setTime((Date)(doc.get("time")));
 
 //        dataSet.setSlotId((int)doc.get("slotId"));
         return dataSet;
@@ -156,5 +180,13 @@ public class DataSet {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 }

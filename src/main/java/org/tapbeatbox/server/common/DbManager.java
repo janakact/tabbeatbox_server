@@ -18,6 +18,7 @@ public class DbManager {
     static final Logger logger = Logger.getLogger(DbManager.class);
     private MongoDatabase db;
 
+    //Instance for singleton
     private static DbManager dbManager;
 
     //Singleton create instance
@@ -41,7 +42,6 @@ public class DbManager {
 
             // Now connect to your databases
             db = mongoClient.getDatabase( "tapbeatbox_data" );
-            logger.debug( "Count is "+db.getCollection("DataSets").count());
             logger.debug("Connect to database successfully");
 
         }catch(Exception e){

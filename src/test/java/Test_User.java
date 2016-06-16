@@ -4,6 +4,7 @@
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,14 +12,16 @@ import static org.junit.Assert.assertNotEquals;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.junit.runners.MethodSorters;
 import org.tapbeatbox.server.common.PasswordManager;
 import org.tapbeatbox.server.models.LoginResource;
 import org.tapbeatbox.server.models.User;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Test_User {
     static final Logger logger = Logger.getLogger(Test_DBManager.class);
 
-    User user;
+    User user,user2;
     String userPassword;
 
     @Before
@@ -38,6 +41,11 @@ public class Test_User {
         user.setPasswordHash(PasswordManager.hashPassword(userPassword));
         User.createUser(user);
 
+
+        user2 = new User();
+        user2.setName("Dummy User 2");
+        user2.setUsername("dummyuser2");
+        user2.setPasswordHash(PasswordManager.hashPassword("password"));
 
 
     }
@@ -69,5 +77,22 @@ public class Test_User {
         assertEquals(loadedUser.getPasswordHash(), user.getPasswordHash());
     }
 
+    @Test
+    public void createUser() {
+
+        //write the log
+        logger.info("Creating a new user");
+        //Create a dummy user
+        User.createUser(user2);
+    }
+
+    @Test
+    public void removeUser()
+    {
+        //Remove the created user
+        logger.info("Removing the created user");
+        User.removeUser(user2.getUsername());
+        logger.debug("Testing Done! - User");
+    }
 
 }
